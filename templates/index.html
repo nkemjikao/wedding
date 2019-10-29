@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+
+        <img src="/static/images/white/slides/slide0.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+        <img src="/static/images/white/slides/slide2.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+        <img src="/static/images/white/slides/slide3.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+        <img src="/static/images/white/slides/slide4.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+        <img src="/static/images/white/slides/slide5.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+        <img src="/static/images/white/slides/slide6.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+        <img src="/static/images/white/slides/slide7.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+        <img src="/static/images/white/slides/slide8.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+        <img src="/static/images/white/slides/slide9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+        <img src="/static/images/white/slides/slide10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+
+        <img src="/static/images/white/slides/slide11.jpeg" style="width:100%">
+    </div>
+    </div>
+    <section class="ftco-section bg-section">
+
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-12 text-center heading-section ftco-animate">
+                    <span class="clone">Bride &amp; Groom</span>
+                    <h2 class="mb-3">Bride &amp; Groom</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-6 text-center d-flex align-items-stretch">
+                            <div class="bride-groom ftco-animate">
+                                <div class="img" style="background-image: url(static/images/white/groom.jpg);"></div>
+                                <div class="text mt-4 px-4">
+                                    <h2>Nkemjika Okongwu</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center d-flex align-items-stretch">
+                            <div class="bride-groom ftco-animate">
+                                <div class="img" style="background-image: url(static/images/white/bride.jpg);"></div>
+                                <div class="text mt-4 px-4">
+                                    <h2>Hyelni Shalangwa</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section" id="people-section">
+        <div class="container-fluid px-md-5">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-12 text-center heading-section ftco-animate">
+                    <span class="clone">People</span>
+                    <h2 class="mb-3">Family &amp; Friends</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel-friends owl-carousel ftco-owl ftco-animate">
+                        <div class="item">
+                            <div class="people text-center">
+                                <div class="img" style="background-image: url(static/images/white/mike.jpg);"></div>
+                                <div class="text">
+                                    <h3>Michael Young</h3>
+                                    <span>Best Man</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="people text-center">
+                                <div class="img" style="background-image: url(static/images/white/okoi.jpg);"></div>
+                                <div class="text">
+                                    <h3>Okoi Wofai</h3>
+                                    <span>Groomsman</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="people text-center">
+                                <div class="img" style="background-image: url(static/images/white/ebuka.jpg);"></div>
+                                <div class="text">
+                                    <h3>Chukwuebuka Anyaoku</h3>
+                                    <span>Groomsman</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="people text-center">
+                                <div class="img" style="background-image: url(static/images/white/jika.jpg);"></div>
+                                <div class="text">
+                                    <h3>Mner-U-Ter Smith Jika</h3>
+                                    <span>Groomsman</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="people text-center">
+                                <div class="img" style="background-image: url(static/images/white/seyi.jpg);"></div>
+                                <div class="text">
+                                    <h3>Oluwaseyi Adebayo</h3>
+                                    <span>Groomsman</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    {% endblock %}
