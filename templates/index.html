@@ -161,6 +161,28 @@
             </div>
         </div>
     </section>
+
+    <script>
+
+        /*
+        Preload images script
+        By JavaScript Kit (http://javascriptkit.com)
+        Over 400+ free scripts here!
+        */
+
+        var myimages = new Array()
+        function preloadimages() {
+            for (i = 0; i < preloadimages.arguments.length; i++) {
+                myimages[i] = new Image()
+                myimages[i].src = preloadimages.arguments[i]
+            }
+        }
+
+
+        //Enter path of images to be preloaded inside parenthesis. Extend list as desired.
+        preloadimages("static/images/white/okoi.jpg", "/static/images/white/slides/slide9.JPG", "/static/images/white/slides/slide10.JPG")
+
+    </script>
     <script>
         var slideIndex = 0;
         showSlides();
