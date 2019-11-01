@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<style>
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create two equal columns that sits next to each other */
+    /* .column {
+  flex: 50%;
+  padding: 0 4px;
+} */
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 50%;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 25%;
+        padding: 5px;
+    }
+</style>
+<div class="row">
+    <div class="column">
+        <img src="static/images/trad/DSC_0062.JPG">
+        <img src="static/images/trad/DSC_0088.JPG">
+        <img src="static/images/trad/DSC_0090.JPG">
+        <img src="static/images/trad/DSC_0118.JPG">
+        <img src="static/images/trad/DSC_0141.JPG">
+
+    </div>
+
+    <div class="column">
+
+        <img src="static/images/trad/DSC_0147.JPG">
+        <img src="static/images/trad/DSC_0150.JPG">
+        <img src="static/images/trad/DSC_0151.JPG">
+        <img src="static/images/trad/DSC_0170.JPG">
+        <img src="static/images/trad/DSC_0174.JPG">
+    </div>
+    <div class="column">
+
+        <img src="static/images/trad/DSC_0206.JPG">
+        <img src="static/images/trad/DSC_0216.JPG">
+        <img src="static/images/trad/DSC_0217.JPG">
+        <img src="static/images/trad/DSC_0244.JPG">
+        <img src="static/images/trad/DSC_0265.JPG">
+    </div>
+    <div class="column">
+
+        <img src="static/images/trad/DSC_0267.JPG">
+        <img src="static/images/trad/DSC_0281.JPG">
+        <img src="static/images/trad/DSC_0294.JPG">
+        <img src="static/images/trad/DSC_0322.JPG">
+        <img src="static/images/trad/DSC_0375.JPG">
+    </div>
+    <div class="column">
+        <img src="static/images/trad/DSC_0405.JPG">
+        <img src="static/images/trad/DSC_0077.JPG">
+        <img src="static/images/trad/DSC_0455.JPG">
+        <img src="static/images/trad/DSC_0511.JPG">
+        <img src="static/images/trad/DSC_0518.JPG">
+
+    </div>
+
+    <div class="column">
+        <img src="static/images/trad/DSC_0551.JPG">
+        <img src="static/images/trad/DSC_0563.JPG">
+        <img src="static/images/trad/DSC_0577.JPG">
+        <img src="static/images/trad/DSC_0584.JPG">
+        <img src="static/images/trad/DSC_0606.JPG">
+    </div>
+
+    <div class="column">
+        <img src="static/images/trad/trad (4).jpeg">
+        <img src="static/images/trad/trad (7).jpeg">
+        <img src="static/images/trad/trad (8).jpeg">
+        <img src="static/images/trad/trad (13).jpeg">
+        <img src="static/images/trad/DSC_0066.JPG">
+    </div>
+
+    <div class="column">
+        <img src="static/images/trad/DSC_0143.JPG">
+        <img src="static/images/trad/DSC_0145.JPG">
+
+    </div>
+</div>
+
+<button onclick="one()">1</button>
+<button onclick="two()">2</button>
+<button onclick="four()">4</button>
+
+<script>
+    /*
+      Preload images script
+      By JavaScript Kit (http://javascriptkit.com)
+      Over 400+ free scripts here!
+      */
+
+    var myimages = new Array()
+    function preloadimages() {
+        for (i = 0; i < preloadimages.arguments.length; i++) {
+            myimages[i] = new Image()
+            myimages[i].src = preloadimages.arguments[i]
+        }
+    }
+
+
+    //Enter path of images to be preloaded inside parenthesis. Extend list as desired.
+    preloadimages("static/images/trad/trad (3).jpeg",
+        "static/images/trad/trad (9).jpeg",
+        "static/images/trad/trad (10).jpeg",
+        "static/images/trad/DSC_0082.JPG",
+        "static/images/trad/DSC_0062.JPG",
+        "static/images/trad/DSC_0088.JPG",
+        "static/images/trad/DSC_0090.JPG",
+        "static/images/trad/DSC_0118.JPG",
+        "static/images/trad/DSC_0141.JPG",
+        "static/images/trad/DSC_0147.JPG",
+        "static/images/trad/DSC_0150.JPG",
+        "static/images/trad/DSC_0151.JPG",
+        "static/images/trad/DSC_0170.JPG",
+        "static/images/trad/DSC_0174.JPG",
+        "static/images/trad/DSC_0176.JPG",
+        "static/images/trad/DSC_0206.JPG",
+        "static/images/trad/DSC_0216.JPG",
+        "static/images/trad/DSC_0217.JPG",
+        "static/images/trad/DSC_0244.JPG",
+        "static/images/trad/DSC_0265.JPG",
+        "static/images/trad/DSC_0267.JPG",
+        "static/images/trad/DSC_0281.JPG",
+        "static/images/trad/DSC_0294.JPG",
+        "static/images/trad/DSC_0322.JPG",
+        "static/images/trad/DSC_0375.JPG",
+        "static/images/trad/DSC_0405.JPG",
+        "static/images/trad/DSC_0452.JPG",
+        "static/images/trad/DSC_0455.JPG",
+        "static/images/trad/DSC_0511.JPG",
+        "static/images/trad/DSC_0518.JPG",
+        "static/images/trad/DSC_0551.JPG",
+        "static/images/trad/DSC_0563.JPG",
+        "static/images/trad/DSC_0577.JPG",
+        "static/images/trad/DSC_0584.JPG",
+        "static/images/trad/DSC_0606.JPG",
+        "static/images/trad/trad (2).jpeg",
+        "static/images/trad/trad (4).jpeg",
+        "static/images/trad/trad (7).jpeg",
+        "static/images/trad/trad (8).jpeg",
+        "static/images/trad/trad (13).jpeg",
+        "static/images/trad/DSC_0066.JPG",
+        "static/images/trad/DSC_0077.JPG",
+        "static/images/trad/DSC_0143.JPG",
+        "static/images/trad/DSC_0145.JPG",
+        "static/images/trad/DSC_0191.JPG",
+
+        "/static/images / white / slides / slide0.JPG",
+        "/static/images/white/slides/slide2.jpeg",
+        "/static/images/white/slides/slide3.jpeg",
+        "/static/images/white/slides/slide4.jpeg",
+        "/static/images/white/slides/slide5.jpeg",
+        "/static/images/white/slides/slide6.jpeg",
+        "/static/images/white/slides/slide7.jpeg",
+        "/static/images/white/slides/slide8.JPG",
+        "/static/images/white/slides/slide9.JPG",
+        "/static/images/white/slides/slide10.JPG",
+        "/static/images/white/slides/slide11.jpeg",
+        "static/images/white/mike.JPG",
+        "static/images/white/okoi.jpg",
+        "static/images/white/ebuka.jpg",
+        "static/images/white/jika.jpg",
+        "static/images/white/seyi.jpg")
+
+
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+
+    // Declare a "loop" variable
+    var i;
+
+    // Full-width images
+    function one() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.flex = "100%";
+        }
+    }
+
+    // Two images side by side
+    function two() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.flex = "50%";
+        }
+    }
+
+    // Four images side by side
+    function four() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.flex = "25%";
+        }
+    }
+</script>
+{% endblock %}

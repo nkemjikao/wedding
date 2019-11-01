@@ -10,5 +10,9 @@ def trad(request):
 def media(request):
     return render(request,'media.html',{})
 
-def gallery(request):
-    return render(request,'gallery.html',{})
+
+def trad_gallery(request):
+    return render(request,'trad_gallery.html',{})
+
+def white_gallery(request):
+    return render (request, 'white_gallery.html',{})

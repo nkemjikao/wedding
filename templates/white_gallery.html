@@ -1,0 +1,255 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<style>
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create two equal columns that sits next to each other */
+    /* .column {
+  flex: 50%;
+  padding: 0 4px;
+} */
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 50%;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 25%;
+        padding: 5px;
+    }
+</style>
+<div class="row">
+    <div class="column">
+        <img src="static/images/white/gallery/DSC_0863.JPG">
+        <img src="static/images/white/gallery/DSC_0925.JPG">
+        <img src="static/images/white/gallery/DSC_0977.JPG">
+        <img src="static/images/white/gallery/DSC_1026.JPG">
+        <img src="static/images/white/gallery/DSC_1041.JPG">
+
+    </div>
+
+    <div class="column">
+    <img src="static/images/white/gallery/DSC_1047.JPG">
+    <img src="static/images/white/gallery/DSC_1060.JPG">
+    <img src="static/images/white/gallery/DSC_1082.JPG">
+    <img src="static/images/white/gallery/DSC_1122.JPG">
+    <img src="static/images/white/gallery/DSC_1126.JPG">
+    
+    </div>
+
+
+    <div class="column">
+
+        <img src="static/images/white/gallery/DSC_1196.JPG">
+        <img src="static/images/white/gallery/DSC_1198.JPG">
+        <img src="static/images/white/gallery/DSC_1212.JPG">
+        <img src="static/images/white/gallery/DSC_1223.JPG">
+        <img src="static/images/white/gallery/DSC_1254.JPG">
+       </div>
+    <div class="column">
+
+        <img src="static/images/white/gallery/DSC_1276.JPG">
+        <img src="static/images/white/gallery/DSC_1281.JPG">
+        <img src="static/images/white/gallery/DSC_1296.JPG">
+        <img src="static/images/white/gallery/DSC_1300.JPG">
+        <img src="static/images/white/gallery/DSC_1311.JPG">
+    </div>
+    <div class="column">
+
+        <img src="static/images/white/gallery/DSC_1324.JPG">
+        <img src="static/images/white/gallery/DSC_1341.JPG">
+        <img src="static/images/white/gallery/DSC_1350.JPG">
+        <img src="static/images/white/gallery/DSC_1357.JPG">
+        <img src="static/images/white/gallery/DSC_1361.JPG">
+    </div>
+    <div class="column">
+        <img src="static/images/white/gallery/DSC_1372.JPG">
+        <img src="static/images/white/gallery/DSC_1384.JPG">
+        <img src="static/images/white/gallery/DSC_1390.JPG">
+        <img src="static/images/white/gallery/DSC_1396.JPG">
+        <img src="static/images/white/gallery/DSC_1398.JPG">
+    </div>
+
+    <div class="column">
+        <img src="static/images/white/gallery/DSC_1420.JPG">
+        <img src="static/images/white/gallery/DSC_1465.JPG">
+        <img src="static/images/white/gallery/DSC_1470.JPG">
+        <img src="static/images/white/gallery/DSC_1473.JPG">
+        <img src="static/images/white/gallery/DSC_1481.JPG">
+    </div>
+
+    <div class="column">
+        <img src="static/images/white/gallery/DSC_1490.JPG">
+        <img src="static/images/white/gallery/DSC_1493.JPG">
+        <img src="static/images/white/gallery/DSC_1501.JPG">
+        <img src="static/images/white/gallery/DSC_1559.JPG">
+        <img src="static/images/white/gallery/DSC_1588.JPG">
+    </div>
+
+    <div class="column">
+        <img src="static/images/white/gallery/DSC_1591.JPG">
+        <img src="static/images/white/gallery/DSC_1611.JPG">
+        <img src="static/images/white/gallery/DSC_1613.JPG">
+        <img src="static/images/white/gallery/DSC_1616.JPG">
+        <img src="static/images/white/gallery/DSC_1706.JPG">
+    </div>
+
+    <div class="column">
+        <img src="static/images/white/gallery/DSC_1710.JPG">
+        <img src="static/images/white/gallery/DSC_1712.JPG">
+        <img src="static/images/white/gallery/DSC_1714.JPG">
+        <img src="static/images/white/gallery/DSC_1716.JPG">
+        <img src="static/images/white/gallery/DSC_1729.JPG">
+        <img src="static/images/white/gallery/gallery3.jpeg">
+    </div>
+
+    <div class="column">
+        <img src="static/images/white/gallery/DSC_1142.JPG">
+        <img src="static/images/white/gallery/DSC_1789.JPG">
+        <img src="static/images/white/gallery/DSC_1794.JPG">
+        <img src="static/images/white/gallery/DSC_1803.JPG">
+        <img src="static/images/white/gallery/DSC_1823.JPG">
+        <img src="static/images/white/gallery/gallery2.jpeg">
+    </div>
+
+    <div class="column">
+        <img src="static/images/white/gallery/DSC_1828.JPG">
+        <img src="static/images/white/gallery/DSC_1832.JPG">
+        <img src="static/images/white/gallery/DSC_1833.JPG">
+        <img src="static/images/white/gallery/DSC_1835.JPG">
+        <img src="static/images/white/gallery/DSC_1840.JPG">
+        <img src="static/images/white/gallery/gallery1.jpeg">
+    </div>
+
+    
+</div>
+
+<button onclick="one()">1</button>
+<button onclick="two()">2</button>
+<button onclick="four()">4</button>
+
+<script>
+    /*
+      Preload images script
+      By JavaScript Kit (http://javascriptkit.com)
+      Over 400+ free scripts here!
+      */
+
+    var myimages = new Array()
+    function preloadimages() {
+        for (i = 0; i < preloadimages.arguments.length; i++) {
+            myimages[i] = new Image()
+            myimages[i].src = preloadimages.arguments[i]
+        }
+    }
+
+
+    //Enter path of images to be preloaded inside parenthesis. Extend list as desired.
+    preloadimages
+
+            ("static/images/white/gallery/DSC_0863.JPG",
+                "static/images/white/gallery/DSC_0925.JPG",
+                "static/images/white/gallery/DSC_0977.JPG",
+                "static/images/white/gallery/DSC_1026.JPG",
+                "static/images/white/gallery/DSC_1041.JPG",
+                "static/images/white/gallery/DSC_1047.JPG",
+                "static/images/white/gallery/DSC_1060.JPG",
+                "static/images/white/gallery/DSC_1082.JPG",
+                "static/images/white/gallery/DSC_1122.JPG",
+                "static/images/white/gallery/DSC_1126.JPG",
+                "static/images/white/gallery/DSC_1142.JPG",
+                "static/images/white/gallery/DSC_1196.JPG",
+                "static/images/white/gallery/DSC_1198.JPG",
+                "static/images/white/gallery/DSC_1212.JPG",
+                "static/images/white/gallery/DSC_1223.JPG",
+                "static/images/white/gallery/DSC_1254.JPG",
+                "static/images/white/gallery/DSC_1276.JPG",
+                "static/images/white/gallery/DSC_1281.JPG",
+                "static/images/white/gallery/DSC_1296.JPG",
+                "static/images/white/gallery/DSC_1300.JPG",
+                "static/images/white/gallery/DSC_1311.JPG",
+                "static/images/white/gallery/DSC_1324.JPG",
+                "static/images/white/gallery/DSC_1341.JPG",
+                "static/images/white/gallery/DSC_1350.JPG",
+                "static/images/white/gallery/DSC_1357.JPG",
+                "static/images/white/gallery/DSC_1361.JPG",
+                "static/images/white/gallery/DSC_1372.JPG",
+                "static/images/white/gallery/DSC_1384.JPG",
+                "static/images/white/gallery/DSC_1390.JPG",
+                "static/images/white/gallery/DSC_1396.JPG",
+                "static/images/white/gallery/DSC_1398.JPG",
+                "static/images/white/gallery/DSC_1420.JPG",
+                "static/images/white/gallery/DSC_1465.JPG",
+                "static/images/white/gallery/DSC_1470.JPG",
+                "static/images/white/gallery/DSC_1473.JPG",
+                "static/images/white/gallery/DSC_1481.JPG",
+                "static/images/white/gallery/DSC_1490.JPG",
+                "static/images/white/gallery/DSC_1493.JPG",
+                "static/images/white/gallery/DSC_1501.JPG",
+                "static/images/white/gallery/DSC_1559.JPG",
+                "static/images/white/gallery/DSC_1588.JPG",
+                "static/images/white/gallery/DSC_1591.JPG",
+                "static/images/white/gallery/DSC_1611.JPG",
+                "static/images/white/gallery/DSC_1613.JPG",
+                "static/images/white/gallery/DSC_1616.JPG",
+                "static/images/white/gallery/DSC_1706.JPG",
+                "static/images/white/gallery/DSC_1710.JPG",
+                "static/images/white/gallery/DSC_1712.JPG",
+                "static/images/white/gallery/DSC_1714.JPG",
+                "static/images/white/gallery/DSC_1716.JPG",
+                "static/images/white/gallery/DSC_1729.JPG",
+                "static/images/white/gallery/DSC_1789.JPG",
+                "static/images/white/gallery/DSC_1794.JPG",
+                "static/images/white/gallery/DSC_1803.JPG",
+                "static/images/white/gallery/DSC_1823.JPG",
+                "static/images/white/gallery/DSC_1828.JPG",
+                "static/images/white/gallery/DSC_1832.JPG",
+                "static/images/white/gallery/DSC_1833.JPG",
+                "static/images/white/gallery/DSC_1835.JPG",
+                "static/images/white/gallery/DSC_1840.JPG",
+                "static/images/white/gallery/gallery1.jpeg",
+                "static/images/white/gallery/gallery2.jpeg",
+                "static/images/white/gallery/gallery3.jpeg")
+
+
+
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+
+    // Declare a "loop" variable
+    var i;
+
+    // Full-width images
+    function one() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.flex = "100%";
+        }
+    }
+
+    // Two images side by side
+    function two() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.flex = "50%";
+        }
+    }
+
+    // Four images side by side
+    function four() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.flex = "25%";
+        }
+    }
+</script>
+{% endblock %}

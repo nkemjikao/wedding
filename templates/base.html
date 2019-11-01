@@ -28,31 +28,48 @@
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
     
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
-        id="ftco-navbar">
         <div class="container">
-
+        
             <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
                 data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
-
+        
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav nav center">
                     <li class="nav-item"><a href="{% url 'home' %}" class="nav-link"><span>Home</span></a></li>
-                    
+        
                     <li class="nav-item"><a href="{% url 'trad' %}" class="nav-link"><span>Traditional
                                 Wedding</span></a></li>
                     <li class="nav-item"><a href="{% url 'home' %}" class="nav-link"><span>White Wedding</span></a>
                     </li>
-                    <li class="nav-item"><a href="{% url 'gallery' %}" class="nav-link"><span>Picture Gallery</span></a></li>
+                                     
+    
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Gallery
+                </a>
+                    
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{% url 'tradgallery' %}">Trad</a>
+                        <a class="dropdown-item" href="{% url 'whitegallery' %}">White</a>
+                       
+                    </div>
+                </li>
+                                        
                     <li class="nav-item"><a href="{% url 'media' %}" class="nav-link"><span>Media</span></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><span>Log In</span></a></li>
+                   
                 </ul>
             </div>
         </div>
+
     </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+        id="ftco-navbar">
+          </nav>
 <div class="container">
     {% block content %}
     {% endblock content %}
@@ -78,13 +95,11 @@
                     <div class="ftco-footer-widget mb-4 ml-md-4">
                         <h2 class="ftco-heading-2">Links</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Bride &amp; Groom</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Traditional Wedding</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>White Wedding</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Media</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Log On</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Gallery</a></li>
+                            <li><a href="{% url 'home' %}"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                            <li><a href="{% url 'trad' %}"><span class="icon-long-arrow-right mr-2"></span>Traditional Wedding</a></li>
+                            <li><a href="{% url 'home' %}"><span class="icon-long-arrow-right mr-2"></span>White Wedding</a></li>
+                            <li><a href="{% url 'media' %}"><span class="icon-long-arrow-right mr-2"></span>Media</a></li>
+                          
                         </ul>
                     </div>
                 </div>
