@@ -9,4 +9,5 @@ urlpatterns = [
     
     path('trad_gallery',views.trad_gallery,name='tradgallery'),
     path('white_gallery',views.white_gallery,name='whitegallery'),
+    path('ict_pics',views.ict_pics,name='ict_pics')
 ]
